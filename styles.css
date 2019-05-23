@@ -113,9 +113,179 @@ a:hover {
   margin: 0 .5rem;
 }
 
+/* ============================== LOCATIONS STYLES =============================== */
+
+.blurb img {
+  height: 7.5rem;
+}
+
+.blurb h3 {
+  font-weight: 700;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+
+.blurb::after {
+  content: "";
+  display: block;
+  width: 25vw;
+  height: 2px;
+  background-color: #444349;
+  margin: 1.5rem auto;
+}
+
+/* --------------------   PROGRAM STYLES ---------------------------------------------*/
+
+.program{
+  width: 100vw;
+  background-color: hsla(100, 0%, 0%, .6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2{
+  margin-top: 1rem;
+}
+
+.program-wrapper {
+  text-align: left
+}
+
+.program p{
+  font-style: italic;
+}
+
+.program ul{
+  letter-spacing: .025rem;
+}
+
+/* -------------------------------------- GIFTS STYLES -----------------------------------------------*/
+
+.gifts img{
+  height: 7.5rem;
+}
+
+.gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+  margin-bottom: 0;
+}
 
 
+/* ----------------------- FAG STYLES ----------------------------------------------------*/
 
+.faq {
+  background-color: hsla(100, 0%, 0%, .6);
+  color: #d2ba87;
+  width: 100vw;
+ 
+}
+
+.faq p {
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+}
+
+.faq h2{
+  margin-top: 1rem;
+}
+
+.question{
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  width: 50vw;
+  height: 0.2rem;;
+  background-color: #d2ba87;
+  margin: 1.5rem auto;
+}
+
+/* -------------------------------- FOOTER STYLES -----------------------------------------------------*/
+
+
+.footer-wrapper{
+  display: table;
+  background-color: #606060;
+  width: 100vw;
+  height: 10vh;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer-wrapper p{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* ------------------------------- Tables and computers styles ------------------------------------------*/
+
+@media(min-width: 768px){
+  .tagline{
+   
+    text-transform: uppercase;
+  }
+  
+  .hero-text{
+    width: 50vw;
+  }
+  
+  .hero-text h1{
+    font-size: 7.5rem;
+  }
+  
+  .blurb{
+    width: 33%;
+    float: left;
+  }
+  
+  .blurb::after{
+    content: "";
+    width: 0;
+  }
+  
+  .locations::after{
+    content: "";
+    display: block;
+    clear: left;
+  }
+  
+  .program-wrapper{
+    width: 33%;
+    margin: 0 auto;
+  }
+  
+  .question-group{
+    float:left;
+    width: 32%;
+    margin-left: 10px;
+    text-align: justify;
+  }
+  
+  .question-group h3{
+    text-align: center
+  }
+  
+  .question-group::after{
+    content: "";
+    width: 0;
+  }
+  
+  
+  
+  .faq::after{
+    content: "";
+    display: block;
+    clear: left;
+  }
+}
 
 
 
